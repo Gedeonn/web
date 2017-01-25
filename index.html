@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>RCA-GHANA</title>
+<meta name="author" content="Gedeon Niyonkuru">
+<meta name="description" content="ResponsiveSlides.js is a tiny jQuery plugin that automatically creates responsive slider using images inside a container.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="rcaFiles/css.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="rcaFiles/responsiveslides/responsiveslides.css">
+
+<link href="rcaFiles/Nav/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="rcaFiles/css.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="rcaFiles/example.css">
+<script src="rcaFiles/ResponsiveSlides/jquery.min.js"></script>
+
+<style>
+  body{
+    background-color:white;
+    margin-bottom:80px;
+  }
+
+  .indicator {
+    position: absolute;
+    top:30px;
+    right: 45%;
+    z-index: 1;
+
+  }
+
+  .mySlides{
+    position:relative;
+    top:1px;
+    border-top: solid 1px #5AD7D7;
+    border-bottom: solid 1px #1C7575;
+    text-shadow: 0 1px 1px #007D7D;
+    list-style: none;
+    margin-left: 2%;
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+
+  }
+  .indicator span {
+    margin-bottom:5px;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    border-radius: 6px;
+  }
+
+  span{
+    background-color:blue;
+  }
+  .gallerie{
+    position:relative;
+    top:1px;
+  }
+  .heado{
+    font-size:1em;
+    padding-left:50px;
+  }
+</style>
+
+
+</head>
+<body >
+
+  <!------------------>
+  <!-- The header  -->
+  <!------------------>  
+
+  <!-- Trying to use some bootstrap -->
+
+  <div id="row">
+   <div class="col-md-12 col-sm-12 col-xs-12">
+     <div id="header">
+       <div id="header1">
+
+         <!-- <div id="log">
+         <img class="logo" src="rcaFiles/Images/gallerie/rcagh.gif"/>
+       </div> -->
+
+     </div>
+
+     <nav class="navbar  header2">
+      <div class="container">
+       <div class="row show-grid"> 
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+		  <a class="navbar-brand"> <img class="logoo" src="rcaFiles/Images/gallerie/rcagh.gif"/></a>
+		</div>
+		
+		  <div class="collapse navbar-collapse" id="menu-collapse">
+          <ul class="nav navbar-nav">
+            <li class="header2style"><a href="#"> Home</a></li>
+            <li class="header2style"><a href="rcaFiles/aboutUs.html" > About Us</a></li>
+            <li class="header2style"><a href="rcaFiles/contactUs.html" > Contact Us</a></li>
+            <li class="header2style"><a href="rcaFiles/aboutRwanda.html" >About Rwanda</a></li>
+			<li class="header2style"><a href="#" ><span class="glyphicon glyphicon-user"></span>SIgn Up</a></li>
+			<li class="header2style"><a href="#" ><span class="glyphicon glyphicon-log-in"></span>Membership Login</a></li>
+			</ul>
+
+        </div>
+      </div>
+     </div>
+	</nav>
+
+
+  <!--------------------------------->
+  <!-- Main content the left part-----> 
+  <!--         bootstrap code      -->
+
+  <div class="container-fluid">
+    <div id="row">
+        <div class="col-md-4 col-sm-4 col-xs-12 mainLeft">
+         <div class="mainLeftHeading">
+          <p class="mainLeftHeadingFont">Top stories </p>
+        </div>
+        <div class="pad"></div>
+        <div class="mainLeftItem">
+          <p class="mainLeftItemFont"> <b><em>East African Night</em></b> The best place to be if you miss Rwandan Music and Rwandan food </p>
+        </div>
+        <div class="mainLeftItem">
+          <p class="mainLeftItemFont"> Happening on 14th December. Find out about <b><em>Umushyikirano(National Dialogue)</em></b> and how to attend it.  </p>
+        </div>
+        <div class="mainLeftItem">
+          <p class="mainLeftItemFont"> <b><em>2016 Rwandan Community Abroad Homecoming Day</em></b>, It is happenning on 14th. Find out more about the program of the day</p>
+        </div>
+        <div class="mainLeftItem">
+          <p class="mainLeftItemFont"> The community of Rwandans living in Ghana welcomes <b><em>New Members </em></b> </p>
+        </div>
+        <div class="extraPaddingTop"></div>
+        <div class="mainLeftHeading">
+          <p class="mainLeftHeadingFont">Diaspora's Current Agenda </p>
+        </div>
+        <div class="mainLeftItem">
+          <p class="mainLeftItemFont">A good citizen contribute to the development of his/her country. Find out how you can do that through Diaspora's <b><em>”Girinka”</em></b> Project</p>
+        </div>
+        <div class="mainLeftItem">
+          <p class="mainLeftItemFont"> <br> <br> </p>
+        </div>
+
+      </div>
+    </div>
+
+  <!--------------------------------->
+  <!--------- The right part -------->
+  <!---------------------------------->
+  
+  <div class="col-md-8 col-sm-8 col-xs-12 mainRight">
+
+    <div class="gallerie">
+      <b class="heado">GOOD MEMORIES SHOULD NEVER DIE! <em>#EXPLORE OUR GALLERIE</em></b>
+      <a class="slido" href="rcaFiles/gallerie1.html"><img class="mySlides" src="rcaFiles/Images/gallerie/first.jpg"></a>
+      <a class="slido" href="rcaFiles/gallery.html"><img class="mySlides" src="rcaFiles/Images/gallerie/second.jpg"></a>
+
+
+      <div class="indicator">
+        <a   onclick="plusDivs(-1)"><span style="cursor:default"><b>PREV</b></span></a>
+        <a  onclick="plusDivs(+1)"><span style="cursor:default"><b >NEXT</b></span></a>
+      </div>
+
+    </div> 
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("slido");
+        if (n > x.length) {slideIndex = 1} 
+          if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+        }
+        x[slideIndex-1].style.display = "block"; 
+      }
+    </script>
+
+
+
+    <div class="row"style="margin-left: 10px; margin-right: 0px;">
+      <div class="col-md-12 col-sm-12 col-xs-12 mainRight">
+        <div  mainNewsLinks">
+          <p class="big">Top links</p> 
+          <div class="link" > 
+            <a class="medium" href="http://money.cnn.com/2016/10/13/technology/rwanda-drone-hospital/?sr=fbCNN111516rwanda-drone-hospital/0801AMStoryLink&linkId=31158439" target="blank">Rwanda's hospitals will use drones to deliver medical supplies</a>
+          </div>
+          <div class="link"> 
+            <a class="medium" href="http://edition.cnn.com/videos/world/2016/06/20/marketplace-africa-rwanda-vision-city-spc-a.cnn" >Rwanda's vision City to house 25,000. Witness a mind blowing project! </a> 
+          </div>
+
+          <div class="link"> 
+            <a class="medium" href="http://edition.cnn.com/2016/07/14/africa/rwanda-tech-hub/" >Made in Rwanda laptops! The first of its kind in East Africa. </a> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="footer"><a href="#">Home </a></div>
+  <div class="footer"><a href="rcaFiles/aboutUs.html"> About Us </a></div>
+  <div class="footer"> <a href="rcaFiles/contactUs.html"> Contact Us </a></div>
+  <div class="footer"> <a href="rcaFiles/aboutRwanda.html"> About Rwanda <a/></div><br>
+  <div class="copy"> &copy; 2016 </div>
+</div> 
+
+
+
+<script src="rcaFiles/Nav/js/jquery-2.1.4.min.js"></script>
+<script src="rcaFiles/Nav/js/bootstrap.min.js"></script>
+<script src="rcaFiles/ResponsiveSlides/jquery.min.js"></script>
+<script src="rcaFiles/ResponsiveSlides/responsiveslides.min.js"></script>
+</body>
+</html>

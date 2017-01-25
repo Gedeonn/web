@@ -1,0 +1,174 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Creating Simple Image Gallery with jQuery - demo by karthikeyan K - w3lessons.info</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function(){
+
+     jQuery('.photo-thumbnails .thumbnail').click(function() {
+		// Setting class "current" to the thumbnail that was clicked.
+		jQuery('.photo-thumbnails .thumbnail').removeClass('current');
+		jQuery(this).addClass('current');
+		// Getting "src" attribute of the image that was clicked.
+		var path = jQuery(this).find('img').attr('src');
+		// Setting "src" attribute of the big image.
+		jQuery('#big-photo img').attr('src', path);
+	});
+     
+   });  
+  </script>
+</head>
+<style>
+  .gallery-photos {
+   padding: 20px;
+ }
+ .gallery-photos .big-photo {
+   display: block;
+   background-color: #ffffff;
+   padding: 3px;
+   border: 1px solid #e7e7e7;
+   margin-right: 210px;
+ }
+ .gallery-photos .big-photo img {
+   display: block;
+   max-width: 100%;
+   height: 600px;
+   margin: 0 auto;
+ }
+ .gallery-photos .photo-thumbnails {
+   float: right;
+   width: 210px;
+ }
+ .gallery-photos .photo-thumbnails .thumbnail {
+   float: left;
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   width: 30%;
+   height: 63px;
+   cursor: pointer;
+   padding: 3px;
+   border: 1px solid #e7e7e7;
+   margin-left: 3.33333%;
+   margin-bottom: 6px;
+   opacity: 0.4;
+ }
+ .gallery-photos .photo-thumbnails .thumbnail.current {
+   opacity: 1;
+   background-color: #ffffff;
+ }
+ .gallery-photos .photo-thumbnails .thumbnail .thumbnail-inner {
+   height: 100%;
+   overflow: hidden;
+ }
+ .gallery-photos .photo-thumbnails .thumbnail img {
+   display: block;
+   width: auto;
+   max-height: 100%;
+   margin: 0 auto;
+ }
+</style>
+<body style="background:#000;">
+  <div style="background:#39A5FF; margin:30px auto; width:100%">
+    <div class="gallery-photos clearfix">
+      <div class="photo-thumbnails">
+        <div class="thumbnail current">
+          <div class="thumbnail-inner"> <img src="images/langma/1.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/2.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/3.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/4.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/5.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/6.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/7.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/8.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/9.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/10.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/11.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/12.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/13.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/14.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/15.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/16.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/17.jpg" alt="" /> </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-inner"> <img src="images/langma/18.jpg" alt="" /> </div>
+        </div>
+
+        <div class="thumbnail">
+         <div class="thumbnail-inner"> <img src="images/langma/19.jpg" alt="" /> </div>
+       </div>
+       <div class="thumbnail">
+        <div class="thumbnail-inner"> <img src="images/langma/20.jpg" alt="" /> </div>
+      </div>
+      <div class="thumbnail">
+        <div class="thumbnail-inner"> <img src="images/langma/21.jpg" alt="" /> </div>
+      </div>
+      <div class="thumbnail">
+        <div class="thumbnail-inner"> <img src="images/langma/22.jpg" alt="" /> </div>
+      </div>
+      <div class="thumbnail">
+        <div class="thumbnail-inner"> <img src="images/langma/23.jpg" alt="" /> </div>
+      </div>
+      <div class="thumbnail">
+        <div class="thumbnail-inner"> <img src="images/langma/24.jpg" alt="" /> </div>
+      </div>
+      <div class="thumbnail">
+        <div class="thumbnail-inner"> <img src="images/langma/25.jpg" alt="" /> </div>
+      </div>
+      <div class="thumbnail">
+        <div class="thumbnail-inner"> <img src="images/langma/26.jpg" alt="" /> </div>
+      </div>
+      <div class="thumbnail">
+        <div class="thumbnail-inner"> <img src="images/langma/27.jpg" alt="" /> </div>
+      </div>
+    </div>
+    <div id="big-photo" class="big-photo"> <img src="images/langma/1.jpg" alt="" /> </div>
+  </div>
+</div>
+
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+<div class="addthis_toolbox addthis_floating_style addthis_counter_style" style="left:50px;top:50px;">
+  <a class="addthis_button_facebook_like" fb:like:layout="box_count" addthis:url="http://www.facebook.com/w3lessons.info"></a>
+  <a class="addthis_button_tweet" tw:count="vertical"></a>
+  <a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
+  <a class="addthis_counter"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4fae5bbe69fd40f0"></script>
+</body>
+</html>
